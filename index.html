@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Avaliação da dor · Rodrigo Selis</title>
+<style>
+  html,body{margin:0;height:100%;background:#F3F6F4}
+  @media (prefers-color-scheme: dark){html,body{background:#0C1511}}
+  iframe{border:0;width:100%;height:100%;display:block}
+</style>
+</head>
+<body>
+<iframe id="app" title="Avaliação da dor" allow="clipboard-write"></iframe>
+<script>
+  // ÚNICA LINHA PARA EDITAR: cole entre as aspas o endereço do App da Web (termina em /exec)
+  var ENDERECO_DO_APP = 'https://script.google.com/macros/s/AKfycbwq5SWpy3k94c5do56W_guDCd3LoGA-Lai0esQ56BhdNcoxT5TJutBA9-3lSSNioeqbEw/exec';
+
+  var q = new URLSearchParams(location.search);
+  var u = new URL(ENDERECO_DO_APP);
+  if (q.get('t')) u.searchParams.set('t', q.get('t'));
+  if (q.get('p')) u.searchParams.set('p', q.get('p'));
+  document.getElementById('app').src = u.toString();
+</script>
+</body>
+</html>
